@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#101216"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Phrasal B2–C1">
+<link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="icons/icon-180.png"><link rel="stylesheet" href="styles.css">
+<title>Phrasal Verbs B2–C1</title>
+</head>
+<body>
+<div class="app-shell">
+<header class="topbar"><div><div class="eyebrow">ENGLISH B2–C1</div><h1>Phrasal Verbs</h1><p>500+ verbos multi-palabra con ejemplos que muestran su uso real.</p></div><button class="icon-btn" id="homeBtn">⌂</button></header>
+<main>
+<section id="home" class="screen active">
+<div class="hero-card"><div class="hero-number" id="totalCount">0</div><div><h2>Biblioteca B2–C1</h2><p>Ahora cada verbo incluye <strong>3 ejemplos distintos</strong> y la separación aparece de forma explícita cuando corresponde.</p></div></div>
+<div class="stats-grid"><div class="stat"><span id="sectionCount">0</span><small>secciones</small></div><div class="stat"><span id="readCount">0</span><small>ya leídos</small></div><div class="stat"><span id="bestScore">0%</span><small>mejor quiz</small></div></div>
+<div class="legend"><span class="type-badge sep">Separable</span><span>el objeto va entre verbo y partícula en los ejemplos</span><span class="type-badge insep">Inseparable</span><span>no se separa; en intransitivos no hay objeto directo</span></div>
+<div class="section-grid" id="sectionGrid"></div>
+<div class="home-actions"><button class="primary-btn" id="allStudyBtn">📚 Estudiar todos</button><button class="secondary-btn" id="allGameBtn">🧠 Juego: todos</button></div>
+<div class="source-note"><strong>Nota:</strong> la clasificación se enseña por el uso/sentido elegido en cada entrada. Algunos verbos pueden tener otros sentidos o patrones de colocación en inglés. La regla de los pronombres en los separables es especialmente importante: <em>look it up</em>, no <em>look up it</em>.</div>
+</section>
+<section id="study" class="screen">
+<div class="section-head"><button class="back-btn" data-go="home">← Inicio</button><div><div class="eyebrow">MODO ESTUDIO</div><h2 id="studyTitle">Sección</h2></div></div>
+<div class="study-tools"><input id="searchBox" type="search" placeholder="Buscar phrasal verb o significado…" autocomplete="off"><select id="studyFilter"><option value="all">Todos</option><option value="unread">No leídos</option><option value="read">Ya leídos</option><option value="separable">Separable</option><option value="inseparable">Inseparable</option></select></div>
+<div class="progress-row"><span id="studyProgressText">0 / 0 leídos</span><span id="studyProgressPct">0%</span></div><div class="progress-track"><div id="studyProgress" class="progress-fill"></div></div>
+<div id="studyList" class="study-list"></div>
+</section>
+<section id="game" class="screen">
+<div class="section-head"><button class="back-btn" data-go="home">← Inicio</button><div><div class="eyebrow">JUEGO DE MEMORIA</div><h2 id="gameTitle">Phrasal Quiz</h2></div></div>
+<div class="game-toolbar"><select id="gameSection"></select><select id="questionCount"><option value="10">10 preguntas</option><option value="20" selected>20 preguntas</option><option value="30">30 preguntas</option><option value="50">50 preguntas</option></select><button class="secondary-btn small" id="newGameBtn">Reiniciar</button></div>
+<div class="progress-track"><div id="gameProgress" class="progress-fill"></div></div><div class="game-progress-label"><span id="gameProgressText">Pregunta 0</span><span id="gameScore">0 puntos</span></div><div id="gameCard" class="game-card"></div>
+</section>
+</main></div><script src="app.js" defer></script></body></html>
